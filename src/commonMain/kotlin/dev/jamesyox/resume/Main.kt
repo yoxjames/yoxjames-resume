@@ -47,14 +47,17 @@ public fun main() {
 
 // Not committed to git repo to protect personal contact info.
 private fun StaticSiteContext.loadPhoneData(resourcesDirectory: Path): PhoneData? {
-    return loadResource(resourcesDirectory, Path("phone.txt")).use {
-        val display = it.readLine()
-        val number = it.readLine()
+    return when (fileSystem.exists(Path(resourcesDirectory, "phone.txt"))) {
+        true -> loadResource(resourcesDirectory, Path("phone.txt")).use {
+            val display = it.readLine()
+            val number = it.readLine()
 
-        if (display != null && number != null) {
-            PhoneData(display, number)
-        } else {
-            null
+            if (display != null && number != null) {
+                PhoneData(display, number)
+            } else {
+                null
+            }
         }
+        false -> null
     }
 }

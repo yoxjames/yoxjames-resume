@@ -69,8 +69,8 @@ public fun TagConsumer<*>.Header(phoneData: PhoneData?) {
         ContactItem(text = "james-yox", image = "linkedin.svg", link = "https://www.linkedin.com/in/james-yox")
         +"•"
         ContactItem(text = "yoxjames@gmail.com", image = "email.svg", link = "mailto:yoxjames@gmail.com")
-        +"•"
         if (phoneData != null) {
+            +"•"
             ContactItem(text = phoneData.display, image = "phone.svg", link = "tel:+${phoneData.number}")
         }
     }

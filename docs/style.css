@@ -1,0 +1,134 @@
+html {
+font-family: Open Sans, sans serif;
+}
+body {
+background-color: transparent;
+margin: 0;
+padding: 0;
+}
+.section-title {
+text-align: left;
+color: #000000;
+margin-top: 12px;
+margin-bottom: 8px;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: #4d4d4d;
+}
+@page {
+size: letter;
+}
+p, li, a {
+text-align: left;
+color: #4d4d4d;
+font-size: 11pt;
+}
+.site-container {
+height: 100%;
+margin: 0 auto 16px;
+text-align: center;
+@media print {
+padding: 0;
+width: 8.5in;
+height: 11in;
+}
+@media not print {
+padding: 8px;
+max-width: 1200px;
+min-width: 400px;
+}
+}
+.subsection-title {
+margin-top: 0;
+margin-bottom: 0;
+text-align: left;
+align-content: center;
+}
+.detail {
+text-align: left;
+}
+.details-list {
+margin-top: 8px;
+margin-bottom: 8px;
+padding-left: 4ch;
+}
+.subsection-caption {
+margin-top: 0;
+margin-bottom: 0;
+align-content: center;
+color: #4d4d4d;
+}
+.two-column-header {
+display: flex;
+justify-content: space-between;
+justify-items: center;
+align-content: center;
+}
+.location {
+margin-top: 0;
+margin-bottom: 0;
+font-style: italic;
+}
+.dates {
+margin-top: 0;
+margin-bottom: 0;
+font-style: italic;
+}
+.top-name {
+margin-top: 0;
+margin-bottom: 6px;
+}
+.top-title {
+font-weight: bold;
+margin: 0;
+}
+.contact-header {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+column-gap: 8px;
+row-gap: 8px;
+align-items: center;
+margin-top: 8px;
+}
+.contact-item {
+display: flex;
+flex-direction: row;
+justify-content: center;
+column-gap: 4px;
+align-items: center;
+}
+.contact-icon {
+height: 16px;
+width: 16px;
+}
+.contact-text {
+margin: 0;
+}
+.skills-section {
+margin: 0 auto;
+text-align: center;
+font-weight: bold;
+@media print {
+width: 95ch;
+}
+@media not print {
+max-width: 95ch;
+min-width: 400px;
+}
+}
+.project-summary {
+margin: 0;
+}
+.company-name-container {
+display: flex;
+flex-direction: row;
+column-gap: 6px;
+align-items: baseline;
+}
+.company-caption {
+margin: 0;
+font-style: italic;
+justify-content: center;
+}
