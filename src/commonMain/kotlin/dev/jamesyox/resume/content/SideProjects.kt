@@ -74,7 +74,7 @@ public fun TagConsumer<*>.SideProjects() {
                 +"See it live at "
                 a {
                     href = Strings.resumeLiveUrl
-                    +"<insert link here>"
+                    +Strings.resumeLiveUrl
                 }
             }
         ),

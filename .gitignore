@@ -42,4 +42,4 @@ kotlin-js-store
 *.jar
 !gradle/wrapper/gradle-wrapper.jar
 .kotlin
-resources/phone.txt
+resources/phone.txt.no

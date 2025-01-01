@@ -34,8 +34,8 @@ internal object Strings {
     val kastroDemoSourceCodeUrl = "https://github.com/yoxjames/kastro-demo"
     val kastroDemoLiveUrl = "https://yoxjames.github.io/kastro-demo/"
 
-    val resumeSourceCodeUrl = "<insert url here>"
-    val resumeLiveUrl = "<insert url here>"
+    val resumeSourceCodeUrl = "https://github.com/yoxjames/yoxjames-resume"
+    val resumeLiveUrl = "https://yoxjames.github.io/yoxjames-resume/"
 
     val arrowPRUrl = "https://github.com/arrow-kt/arrow/pull/3052"
     val homeAssistantPRUrl = "https://github.com/home-assistant/android/pull/525"
