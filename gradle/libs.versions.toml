@@ -1,0 +1,22 @@
+[versions]
+current = "0.1.0"
+clikt = "5.0.1"
+benmanes-versions = "0.51.0"
+kotlin = "2.1.0"
+jvm = "17"
+detekt = "1.23.7"
+kotlinx-html = "0.11.0"
+statik = "0.1.0"
+
+[libraries]
+detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+detekt-library = { module = "io.gitlab.arturbosch.detekt:detekt-rules-libraries", version.ref = "detekt" }
+kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlinx-html" }
+jamesyox-statik-core = { module = "dev.jamesyox:statik-core", version.ref = "statik" }
+jamesyox-statik-markdown = { module = "dev.jamesyox:statik-markdown", version.ref = "statik" }
+jamesyox-statik-syntax = { module = "dev.jamesyox:statik-syntax", version.ref = "statik" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+benmanes-versions = { id = "com.github.ben-manes.versions", version.ref = "benmanes-versions" }
